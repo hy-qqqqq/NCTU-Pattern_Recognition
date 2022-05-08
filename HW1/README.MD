@@ -1,14 +1,20 @@
-## HW1: Linear Regression using Gradient Descent
+<h1> HW1: Linear Regression using Gradient Descent </h1>
 
-### Goals
-In this coding assignment, you need to implement linear regression by using only NumPy, then train your implemented model using Gradient Descent by the provided dataset and test the performance with testing data. 
+*Homework in Pattern Recognition lecture.*  
+*Implemented with only numpy.*
 
-Find the questions at [https://docs.google.com/document/d/1h2yOmAaO1Q932Xl4r2KmDTTHFbw0Nz6DtGSBorJS_Fw/edit](https://docs.google.com/document/d/1h2yOmAaO1Q932Xl4r2KmDTTHFbw0Nz6DtGSBorJS_Fw/edit)
-### Submission
-- You should submit a compressed file (e.g. .rar, .zip) with student number and homework number on E3-system with the file name below.
-<STUDENT-ID>_HW<NUMBER>, e.g.0856165_HW1
+<h2> Goal </h2>
 
-- The compressed file should have **two files**, including your code (.py or .ipynb) and a report (**.pdf**) with your answer. Both files should be named as above. Please refer to the attached file for details
+implement linear regression by using only NumPy, then train your implemented model using Gradient Descent by the provided dataset and test the performance with testing data. 
 
+<h2> Implementation & References </h2>
 
-
+- [Linear Regression using Gradient Descent](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931)
+    - mean square error
+    - calculate gradients
+- [gradient descent intuition](https://www.coursera.org/lecture/machine-learning/gradient-descent-intuition-GFFPB)
+    - [Batch, Mini Batch & Stochastic Gradient Descent](https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
+        - (batch) GD - entire dataset (x = m)
+        - mini-batch GD - a subset of dataset (1 < x < m)
+        - SGD - an observation of dataset (x = 1)
+    - [gradient descent optimization algorithms](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E6%95%B8%E5%AD%B8-%E4%B8%89-%E6%A2%AF%E5%BA%A6%E6%9C%80%E4%BD%B3%E8%A7%A3%E7%9B%B8%E9%97%9C%E7%AE%97%E6%B3%95-gradient-descent-optimization-algorithms-b61ed1478bd7)
