@@ -1,18 +1,37 @@
-## HW3: Decision Tree, AdaBoost and Random Forest, due date: May 4, 23:59
+<h1> HW3: Decision Tree, AdaBoost and Random Forest </h1>
 
-### Goals
+*Homework in Pattern Recognition lecture.*  
+*Implemented with only numpy.*
 
-In this coding assignment, you need to implement the Decision Tree, AdaBoost and Random Forest algorithm by using only NumPy, then train your implemented model by the provided dataset and test the performance with testing data. Find the sample code and data on the GitHub page
+<h2> Goals </h2>
 
-Please note that only NumPy can be used to implement your model, you will get no points by simply calling sklearn.tree.DecsionTreeClassifier. 
+implement the Decision Tree, AdaBoost and Random Forest algorithm by using only NumPy, then train your implemented model by the provided dataset and test the performance with testing data.
 
-Find the questions at [this document](https://docs.google.com/document/d/1nBCGSAPUGdOFVOq-btIb5CNOcDrptEeiY7eIWWuOl-8/edit)
+<h2> Implementation </h2>
 
-### Submission
-- You should submit a compressed file (e.g. .rar, .zip) on E3-system with the filename below.
-<STUDENT-ID>_HW<NUMBER>, e.g.0856165_HW1
+<h3> Adaboost </h3>
 
-- The compressed file should have **two files**, including your **1) code (e.g. .py or .ipynb)** and **2) report(.pdf)** with your answer. Both files should be named as above. Please refer to the attached file for details
+- The AdaBoost algorithm is based on the concept of **boosting**. The idea behind boosting is that a set of **weak** classifiers can make up to a robust classifier using a voting mechanism
+- Weight distrinution
+    - updated in each iteration (train one weak classifier)
 
+<h3> Random Forest </h3>
 
+- A collection of multiple decision trees
+- Randomness
+    - dataset (subset)
+        - for every bootstrap dataset, build one decision tree
+    - best split
+        - random in each decision node
+- Majority voting
 
+<h2> References </h2>
+
+- Adaboost
+    - [apply sample weight in Decision tree learning](https://stackoverflow.com/questions/41194035/how-to-implement-decision-trees-in-boosting)
+    - [AdaBoost from Scratch](https://towardsdatascience.com/adaboost-from-scratch-37a936da3d50)
+    - [Why is the error of my AdaBoost implementation not going down?](https://stackoverflow.com/questions/55318330/why-is-the-error-of-my-adaboost-implementation-not-going-down)
+- Random Forest
+- Supplement
+    - [sklearn - ensemble method](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn/ensemble)
+    - [Feature Importance in Decision Trees](https://sefiks.com/2020/04/06/feature-importance-in-decision-trees/)
